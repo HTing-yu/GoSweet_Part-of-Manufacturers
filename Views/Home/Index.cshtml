@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <a href="~/Manufacturers/Homepage">結合網頁製作</a>
+    <p>今天:@ViewData["Now"]</p>
+    <p>這個月月初:@ViewData["MonthFirst"]</p>
+    <p>上個月月底:@ViewData["MonthLast"]</p>
+    <p>上個月月初:@ViewData["LastMonth"]</p>
+    <p>某個指定天:@ViewData["SomeDay"]</p>
+    <p>日期間比較:@ViewData["Comparison"]</p>
+</div>
