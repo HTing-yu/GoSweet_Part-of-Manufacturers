@@ -1,0 +1,170 @@
+.FirmBackground {
+    background-color: rgba(33,37,41,0.03);
+}
+/*營收檢表-次標題*/
+.RevenuepageSubtitle {
+    font-size: 2rem;
+}
+
+/*營收檢表-英文代號*/
+.RevenuepageExplain {
+    font-size:1.2rem;
+}
+
+/*營收檢表-數字*/
+.RevenuepageContent {
+    font-size:1.5rem;
+    color:#A15C38;
+}
+
+/*營收圖表-日期搜索按鈕*/
+.btn-sm:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+
+/*營收檢表-圖表設定標題*/
+.RevenuepageChartSet {
+    font-size:1.5rem;
+}
+
+/*營收圖表-圖表設定細項*/
+.RevenuepageChartSetting {
+    font-size:1.2rem;
+}
+
+/*營收圖表-圖表設定細項*/
+/*.radio:hover {
+background-color: rgba(0,0,0,0.2);
+}*/
+
+/*圖表設定*/
+canvas {
+    min-height: 311px;
+}
+
+/*列表標籤*/
+.nav-link {
+    color:black;
+}
+
+/*列表標籤*/
+.nav-link:hover {
+    color: #C15C38;
+}
+
+/*列表標籤*/
+.nav-item:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+
+/*列表表格流水編*/
+.RevenuepageTableNumber {
+    width: 20%;
+    word-break: keep-all;
+    white-space: nowrap;
+}
+
+.RevenuepageTableTitle {
+    font-size:1.3rem;
+    width:100%;
+}
+/*列表表格資料*/
+.RevenuepageTableData {
+    width: 100%;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 表格用樣式 */
+.SearchList{
+  min-height: 910px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #cdcdcd;
+    width: 100%;
+    table-layout:fixed;
+}
+
+td,
+th {
+    border: 1px solid #cdcdcd;
+    padding: 8px;
+}
+
+@media only screen and (max-width: 1200px), (min-device-width: 768px) and (max-device-width: 1024px) {
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border-bottom: 2px solid #690461;
+    }
+
+    td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50% !important;
+        text-align: left !important;
+    }
+
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+    }
+
+    td:nth-of-type(1):before {
+        content: 'Date';
+        color: #C15C38;
+    }
+
+    td:nth-of-type(2):before {
+        content: "Reason";
+        color: #C15C38;
+    }
+
+    td:nth-of-type(3):before {
+        content: "OrderID";
+        color: #C15C38;
+    }
+
+    td:nth-of-type(4):before {
+        content: "OrderStatus";
+        color: #C15C38;
+    }
+
+    td:nth-of-type(5):before {
+        content: "UnitPrice(A)";
+        color: #C15C38;
+    }
+
+    td:nth-of-type(6):before {
+        content: "Quentity(B)";
+        color: #C15C38;
+    }
+
+    td:nth-of-type(7):before {
+        content: "Total(A*B)";
+        color: #C15C38;
+    }
+}

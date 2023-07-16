@@ -1,0 +1,175 @@
+﻿@*引用*@
+<link href="~/css/Homepage-Manufacturers.css" rel="stylesheet" asp-append-version="true">
+<script src="~/js/Homepage-Manufacturers.js" asp-append-version="true"></script>
+
+<div class="FirmBackground">
+	<section class="container">
+
+		@*廠商簡介總覽*@
+		<div class="row mx-0 my-4">
+
+			@*廠商商標*@
+			<div class="col-12 col-xl-3 py-2">
+				<div class="row pe-3">
+					<div class="HomepageStatusBlock col-12 py-2 d-flex justify-content-center align-items-center border rounded bg-white shadow">
+						<a href="./">
+							<figure class="figure">
+								<!-- ★★★★★需要廠商圖片★★★★★ -->
+								<img src="~/img/home/AngleCake.jpg" class="figure-img img-fluid rounded" alt="ManufacturersLogo" id="ManufacturersLogo">
+								<figcaption class="LogoContent figure-caption">歡迎回來!</figcaption>
+							</figure>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			@*營運簡報*@
+			<div class="col-12 col-xl-9 py-2">
+				<div class="row ps-3">
+					<div class="HomepageStatusBlock col-12 border rounded bg-white shadow">
+						<div class="row d-flex flex-column">
+							<div class="col-12 my-2">
+								<span class="HomepageFirmStatusTitle fw-bold">
+									賣場評價:
+								</span>
+								<span class="star star-lock">
+									<input type="radio" name="rdStarLock" value="1" placeholder="星級評測" />
+									<input type="radio" name="rdStarLock" value="2" placeholder="星級評測" />
+									<input type="radio" name="rdStarLock" value="3" placeholder="星級評測" />
+									<input type="radio" name="rdStarLock" value="4" placeholder="星級評測" />
+									<input type="radio" name="rdStarLock" value="5" placeholder="星級評測" />
+								</span>
+								<span class="HomepageFirmStatusContent">(<span id="NumberOrder">999</span>)</span>
+							</div>
+							<div class="HomepageFirmStatusTitle fw-bold col-12 mt-2">當月表現:</div>
+							<div class="col-12 my-3 text-center">
+								<div class="row d-flex justify-content-around">
+									<!-- ★★★★★需要廠商訂單數★★★★★ -->
+									<div class="HomepageFirmStatusSubtitle col-12 col-xl">總訂單數:<span class="HomepageFirmStatusContent">999</span></div>
+									<!-- ★★★★★需要廠商訂單數★★★★★ -->
+									<div class="HomepageFirmStatusSubtitle col-12 col-xl">總寄件數:<span class="HomepageFirmStatusContent">999</span></div>
+									<!-- ★★★★★需要廠商訂單數★★★★★ -->
+									<div class="HomepageFirmStatusSubtitle col-12 col-xl">未寄件數:<span class="HomepageFirmStatusContent">999</span></div>
+									<!-- ★★★★★需要廠商訂單數★★★★★ -->
+									<div class="HomepageFirmStatusSubtitle col-12 col-xl text-nowrap overflow-hidden">總銷售額:<span class="HomepageFirmStatusContent">999,999</span></div>
+								</div>
+							</div>
+							<div class="HomepageFirmStatusTitle fw-bold col-12">前月表現:</div>
+							<div class="col-12 my-3 text-center">
+								<div class="row d-flex justify-content-around">
+									<!-- ★★★★★需要廠商訂單數★★★★★ -->
+									<div class="HomepageFirmStatusSubtitle col-12 col-xl">總訂單數:<span class="HomepageFirmStatusContent">999</span></div>
+									<!-- ★★★★★需要廠商訂單數★★★★★ -->
+									<div class="HomepageFirmStatusSubtitle col-12 col-xl">總寄件數:<span class="HomepageFirmStatusContent">999</span></div>
+									<!-- ★★★★★需要廠商訂單數★★★★★ -->
+									<div class="HomepageFirmStatusSubtitle col-12 col-xl">未寄件數:<span class="HomepageFirmStatusContent">999</span></div>
+									<!-- ★★★★★需要廠商訂單數★★★★★ -->
+									<div class="HomepageFirmStatusSubtitle col-12 col-xl text-nowrap overflow-hidden">總銷售額:<span class="HomepageFirmStatusContent">999,999</span></div>
+								</div>
+							</div>
+							<a class="col-12 mt-3 text-end link-underline-light text-secondary">
+								更新日期：<span class="update" onclick="refresh()">
+									<!-- ★★★★★需要廠商訂單數★★★★★ -->
+									2023-06-01 ~ 2023-06-28
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		@*未處理訂單*@
+		<div class="row mx-0 border rounded my-4 bg-white shadow">
+			<div class="col-12 py-2">
+				<div class="HomepageFirmTitle m-1">最近訂單</div>
+				<hr>
+				<form>
+					<table class="HomepageTable table table-hover">
+						<thead>
+							<tr>
+								<!-- ★★★★★需要廠商訂單數★★★★★ -->
+								<th class="HomepageTableNumber" scope="col">#</th>
+								<th scope="col" class="HomepageTableTitle">訂單成立日期</th>
+								<th scope="col" class="HomepageTableTitle">訂單編號</th>
+								<th scope="col" class="HomepageTableTitle">品項</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td class="HomepageTableData">9999/12/31</td>
+								<td class="HomepageTableData"><a href="./">AA999999999999999999999999999999999999999999</a></td>
+								<td class="HomepageTableData">龍龍龍龍龍龍龍龍龍龍龍龍龍龍龍龍龍龍龍龍龍龍龍龍龍龍龍龍龍龍龍龍龍龍龍龍龍龍龍龍龍龍</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+			</div>
+		</div>
+
+		@*熱門區塊*@
+		<div class="row mx-0 my-4">
+
+			@*最近評論*@
+			<div class="col-6 py-2">
+				<div class="row pe-3">
+					<div class="col-12 border rounded  bg-white shadow">
+						<div class="row py-2">
+							<div class="HomepageFirmTitle col-12 m-1">
+								最近評論
+							</div>
+							<hr />
+							<table class="HomepageTable table table-hover">
+								<thead>
+									<tr>
+										<th scope="col" class="HomepageTableNumber">#</th>
+										<th scope="col" class="HomepageTableTitle">日期</th>
+										<th scope="col" class="HomepageTableTitle">內容</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th class="HomepageTableNumber" scope="row">1</th>
+										<td class="HomepageTableData">RC.CommentDate</td>
+										<td class="HomepageTableData">RC.Contentttttttttttttttttttttttttttttttttttttttttttttttttttt</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			@*最近熱賣*@
+			<div class="col-6 py-2">
+				<div class="row ps-3">
+					<div class="col-12 border rounded  bg-white shadow">
+						<div class="row py-2">
+							<div class="HomepageFirmTitle col-12 m-1">
+								近期熱賣
+							</div>
+							<hr />
+							<table class="HomepageTable table table-hover">
+								<thead>
+									<tr>
+										<th scope="col" class="HomepageTableNumber">#</th>
+										<th scope="col" class="HomepageTableTitle">商品名</th>
+										<th scope="col" class="HomepageTableTitle">數量</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th class="HomepageTableNumber" scope="row">1</th>
+										<td class="HomepageTableData">HS.ProductName</td>
+										<td class="HomepageTableData">HS.Quentity</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
